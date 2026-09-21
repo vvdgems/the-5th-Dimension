@@ -1,6 +1,6 @@
 hsp = 0;
 vsp = 0;
-
+//hi
 walk_multiplier = 1; // ooh look at me and my fancy "walk multiplier" instead of "walk speed" aren't i just soooo PROFESSIONAL?!??!
 
 canmove = true;
