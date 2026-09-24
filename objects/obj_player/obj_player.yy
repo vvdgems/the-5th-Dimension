@@ -14,7 +14,10 @@
     "name":"Cube and the Super Beans",
     "path":"Cube and the Super Beans.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_entity",
+    "path":"objects/obj_entity/obj_entity.yy",
+  },
   "persistent":true,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

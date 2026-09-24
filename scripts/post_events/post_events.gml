@@ -5,18 +5,9 @@ function increase_number(target_instance, variable_name_string, amount){
     // 2. Set the new, increased value back onto that instance
     variable_instance_set(target_instance, variable_name_string, current_val + amount);
 }
-
-function chest(one = undefined, two = undefined, bux = 0){
-	if one != undefined
-	{
-		inv_add(obj_inventory.inv,one,1);
-	}
-	if two != undefined
-	{
-		inv_add(obj_inventory.inv,two,1);
-	}
-	if bux != 0 
-	{
-		obj_player.bux+=bux;
-	}
+function instance_create(_x,_y,_obj){
+	x = _x;
+	y = _y;
+	obj = _obj
+    instance_create_depth(x,y,0,obj);
 }

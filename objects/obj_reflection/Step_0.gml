@@ -1,0 +1,1 @@
+entitycollision = place_meeting(x, y, obj_entity);

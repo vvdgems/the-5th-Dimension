@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_floor_one",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":229.5757,
+  "exportDir":"",
+  "name":"snd_floor_one",
+  "parent":{
+    "name":"Cube and the Super Beans",
+    "path":"Cube and the Super Beans.yyp",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_floor_one.mp3",
+  "volume":1.0,
+}

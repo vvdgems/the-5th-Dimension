@@ -1,14 +1,27 @@
+
 switch (state)
 {
     case "start":
-		if instance_exists(obj_player) {obj_player.canmove = false;}
-        var _speed = 15; 
-        var _amount = 1 - exp(-_speed * (delta_time / 1000000));
+        if instance_exists(obj_player) {obj_player.canmove = false;}
+      //  if instance_exists(obj_enemy) {obj_enemy.canmove = false;}
+        var _speed = 1; 
+        var _amount = 1 - exp(-_speed * (delta_time / 10000));
         draw_y = lerp(draw_y, target_y, _amount);
         canidrawyet = false;
         
         var _mmax_width = 550; 
-        wrapped_text = string_wordwrap_width(dialogue[dialogue_index], _mmax_width, "\n", true);
+        var _parsed = dialogue_parse_tags(dialogue[dialogue_index]);
+        dialogue_tags = _parsed.tags;
+        wrapped_text = string_wordwrap_width(_parsed.clean_text, _mmax_width, "\n", true);
+        
+        portrait_sprite = -1;
+        for (var _t = 0; _t < array_length(dialogue_tags); _t++)
+        {
+            if (dialogue_tags[_t].pos == 1 && dialogue_tags[_t].type == "face")
+            {
+                portrait_sprite = asset_get_index(dialogue_tags[_t].val);
+            }
+        }
         
         if (abs(target_y - draw_y) < 0.5) 
         {
@@ -19,7 +32,6 @@ switch (state)
         break;
 
     case "inprog":
-		
         canidrawyet = true;
         
         var _text_length = string_length(wrapped_text);
@@ -44,7 +56,18 @@ switch (state)
                     char_index = 0;
                     
                     var _max_width = 550; 
-                    wrapped_text = string_wordwrap_width(dialogue[dialogue_index], _max_width, "\n", true);
+                    var _parsed = dialogue_parse_tags(dialogue[dialogue_index]);
+                    dialogue_tags = _parsed.tags;
+                    wrapped_text = string_wordwrap_width(_parsed.clean_text, _max_width, "\n", true);
+                    
+                    portrait_sprite = -1;
+                    for (var _t = 0; _t < array_length(dialogue_tags); _t++)
+                    {
+                        if (dialogue_tags[_t].pos == 1 && dialogue_tags[_t].type == "face")
+                        {
+                            portrait_sprite = asset_get_index(dialogue_tags[_t].val);
+                        }
+                    }
                 }
                 else 
                 {
@@ -56,7 +79,7 @@ switch (state)
         break;
 
     case "closing":
-        var _dspeed = 10; 
+        var _dspeed = 500; 
         var _damount = 1 - exp(-_dspeed * (delta_time / 1000000));
         draw_y = lerp(draw_y, target_y, _damount);
         canidrawyet = false;
@@ -64,15 +87,17 @@ switch (state)
         if (abs(target_y - draw_y) < 0.5) 
         {
             state = "complete";
+			
         }
         break;
 
     case "complete":
-		if post_talk_event == true
-		{
-			script_execute(pt_which,pt_argument_one,pt_argument_two,pt_argument_three);	
-		}
-		if instance_exists(obj_player) {obj_player.canmove = true;}
+        if post_talk_event == true
+        {
+            script_execute(pt_which,pt_argument_one,pt_argument_two,pt_argument_three);    
+        }
+        if instance_exists(obj_player) {obj_player.canmove = true;}
+        //if instance_exists(obj_enemy) {obj_enemy.canmove = true;}
         instance_destroy();
         break;
 }

@@ -1,3 +1,4 @@
+
 dialogue = [];
 dialogue_index = 0;
 
@@ -30,4 +31,7 @@ angle = 0;
 
 font = fnt_normal;
 
-padding = 16;
+dialogue_tags = [];
+wrapped_text = "";
+
+padding = 20;

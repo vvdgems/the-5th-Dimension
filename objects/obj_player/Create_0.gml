@@ -1,7 +1,7 @@
 hsp = 0;
 vsp = 0;
 //hi
-walk_multiplier = 1; // ooh look at me and my fancy "walk multiplier" instead of "walk speed" aren't i just soooo PROFESSIONAL?!??!
+walk_multiplier = 0.5; // ooh look at me and my fancy "walk multiplier" instead of "walk speed" aren't i just soooo PROFESSIONAL?!??!
 
 canmove = true;
 
@@ -40,7 +40,7 @@ base_atk = 1;
 atk = 0;
 base_def = 2;
 def = 0;
-base_spd = 2;
+base_spd = 1;
 spd = base_spd;
 
 bux = 0;
