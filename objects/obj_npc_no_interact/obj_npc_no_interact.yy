@@ -1,19 +1,22 @@
 {
   "$GMObject":"",
-  "%Name":"obj_textbox",
+  "%Name":"obj_npc_no_interact",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_textbox",
+  "name":"obj_npc_no_interact",
   "overriddenProperties":[],
   "parent":{
     "name":"Cube and the Super Beans",
     "path":"Cube and the Super Beans.yyp",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_entity",
+    "path":"objects/obj_entity/obj_entity.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,7 +34,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_npc",
+    "path":"sprites/spr_npc/spr_npc.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

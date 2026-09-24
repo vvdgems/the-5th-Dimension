@@ -9,7 +9,7 @@ if (instance_exists(obj_player)) {
     if (_dist <= interact_radius) {
         
         // 2. Dialogue System: If they press E and no textbox exists...
-        if (keyboard_check_pressed(ord("E")) && !_textbox_active) {
+        if  !_textbox_active {
 			var _text = instance_create_depth(0, 0, 9999, obj_textbox);
             _text.dialogue = dialogue;
             _text.dialogue_index = dialogue_index;
@@ -18,6 +18,7 @@ if (instance_exists(obj_player)) {
 			_text.pt_argument_one = pt_argument_one;
 			_text.pt_argument_two = pt_argument_two;
 			_text.pt_argument_three = pt_argument_three;
+			instance_destroy();
         }
         
         // 3. Prompt System: Create a prompt if we don't already have one

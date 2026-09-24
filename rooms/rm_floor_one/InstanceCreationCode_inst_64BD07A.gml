@@ -1,4 +1,6 @@
-dialogue = [
+dialogue = ["The path is told by time..."]
+
+/*/dialogue = [
 "Is it not a fact that you are gone\n but don't notice yet?",
 "I've heard from a man...\nYou know what he told me?",
 "You can hear long after\nthe big sleep!",

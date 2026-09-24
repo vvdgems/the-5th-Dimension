@@ -12,9 +12,18 @@
     {"name":"inst_4E5D4E75","path":"rooms/rm_floor_one_up_left/rm_floor_one_up_left.yy",},
     {"name":"inst_513F6910","path":"rooms/rm_floor_one_up_left/rm_floor_one_up_left.yy",},
     {"name":"inst_28E3A280","path":"rooms/rm_floor_one_up_left/rm_floor_one_up_left.yy",},
+    {"name":"inst_380E4FA3","path":"rooms/rm_floor_one_up_left/rm_floor_one_up_left.yy",},
+    {"name":"inst_557133BC","path":"rooms/rm_floor_one_up_left/rm_floor_one_up_left.yy",},
   ],
   "isDnd":false,
   "layers":[
+    {"$GMRTileLayer":"","%Name":"Tiles_1","depth":0,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_1","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":16,"SerialiseWidth":19,"TileCompressedData":[
+          1,3,-17,4,3,5,9,2,-16,16,3,17,9,11,-16,22,3,23,9,11,-16,28,3,29,9,11,-17,-2147483648,2,9,11,-17,-2147483648,
+          2,9,11,-17,-2147483648,2,9,11,-9,-2147483648,1,3,-6,4,3,5,9,11,-9,-2147483648,1,9,-6,10,3,11,9,11,-9,
+          -2147483648,1,9,-6,10,3,11,9,11,-9,-2147483648,1,9,-6,10,3,11,9,11,-9,-2147483648,1,9,-6,10,3,11,9,11,
+          -9,-2147483648,1,9,-6,10,3,11,9,11,-9,-2147483648,1,9,-6,10,3,11,9,536870914,-9,4,1,805306370,-6,10,
+          2,11,15,-17,16,1,17,
+        ],"TileDataFormat":1,},"tilesetId":{"name":"ts_grassy_1","path":"tilesets/ts_grassy_1/ts_grassy_1.yy",},"userdefinedDepth":false,"visible":true,"x":0,"y":0,},
     {"$GMRInstanceLayer":"","%Name":"Instances","depth":100,"effectEnabled":true,"effectType":null,"gridX":16,"gridY":16,"hierarchyFrozen":false,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"instances":[
         {"$GMRInstance":"v4","%Name":"inst_8C5CF8B1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":true,"inheritedItemId":{"name":"inst_8C5CF8B1","path":"rooms/rm_floor_one/rm_floor_one.yy",},"inheritItemSettings":false,"isDnd":false,"name":"inst_8C5CF8B1","objectId":{"name":"obj_camera","path":"objects/obj_camera/obj_camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":288.0,"y":0.0,},
         {"$GMRInstance":"v4","%Name":"inst_1C56CB00","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1C56CB00","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":19.0,"scaleY":4.0,"x":0.0,"y":0.0,},
@@ -22,13 +31,15 @@
         {"$GMRInstance":"v4","%Name":"inst_4E5D4E75","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_4E5D4E75","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":17.0,"scaleY":2.0,"x":0.0,"y":224.0,},
         {"$GMRInstance":"v4","%Name":"inst_513F6910","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_513F6910","objectId":{"name":"obj_wall","path":"objects/obj_wall/obj_wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":2.0,"scaleY":12.0,"x":0.0,"y":64.0,},
         {"$GMRInstance":"v4","%Name":"inst_28E3A280","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_28E3A280","objectId":{"name":"obj_moveroom","path":"objects/obj_moveroom/obj_moveroom.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.5,"scaleY":3.0,"x":296.0,"y":64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_380E4FA3","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_380E4FA3","objectId":{"name":"obj_wave_effect","path":"objects/obj_wave_effect/obj_wave_effect.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":32.0,"y":64.0,},
+        {"$GMRInstance":"v4","%Name":"inst_557133BC","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_557133BC","objectId":{"name":"obj_npc_no_interact","path":"objects/obj_npc_no_interact/obj_npc_no_interact.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.01,"scaleY":1.3939394,"x":180.0,"y":66.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRBackgroundLayer":"","%Name":"Backgrounds_1","animationFPS":30.0,"animationSpeedType":0,"colour":4294967295,"depth":400,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"hspeed":0.1,"htiled":true,"inheritLayerDepth":true,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Backgrounds_1","properties":[],"resourceType":"GMRBackgroundLayer","resourceVersion":"2.0","spriteId":{"name":"spr_bg_tut_1","path":"sprites/spr_bg_tut_1/spr_bg_tut_1.yy",},"stretch":false,"userdefinedAnimFPS":false,"userdefinedDepth":false,"visible":true,"vspeed":0.1,"vtiled":true,"x":0,"y":0,},
   ],
   "name":"rm_floor_one_up_left",
   "parent":{
-    "name":"Cube and the Super Beans",
-    "path":"Cube and the Super Beans.yyp",
+    "name":"floor one",
+    "path":"folders/floor one.yy",
   },
   "parentRoom":{
     "name":"rm_floor_one",
